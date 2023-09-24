@@ -1,0 +1,229 @@
+.dark .apsCont {
+    background: rgb(4, 4, 11);
+    background: linear-gradient(130deg, rgba(4, 4, 11, 1) 0%, rgba(0, 77, 84, 1) 45%, rgba(5, 83, 29, 1) 77%);
+}
+
+.apsCont {
+    width: 100%;
+    height: 80vh;
+    background: rgb(13, 14, 37);
+    background: linear-gradient(130deg, rgba(13, 14, 37, 1) 0%, rgb(20, 91, 97) 55%, rgb(38, 128, 66) 75%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apsCont img {
+    width: 500px;
+    height: 300px;
+}
+
+.apsCont .apsText {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.apsCont .apsText span {
+    font-size: 25px;
+    font-family: var(--font-elements);
+    color: var(--theme-light-text);
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+.dark .apsCont .apsText span {
+    color: var(--theme-dark-text);
+}
+
+.apsCont .apsText button {
+    font-family: var(--font-elements);
+    background-color: rgb(78, 78, 143);
+    color: #f2f2f2;
+    font-size: 18px;
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.apsCont .apsText button:hover {
+    border: 1.8px solid #f2f2f2;
+    background-color: transparent;
+}
+
+.contInfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contFaleConosco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.contFaleConosco .faleConoscoInfo {
+    display: flex;
+    width: 80%;
+    height: 85%;
+    background-color: var(--theme-light-elements);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px #404040;
+}
+
+.contFaleConosco .faleConoscoInfo .contText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.contFaleConosco .faleConoscoInfo .contText span {
+    text-align: center;
+    max-width: 60%;
+    word-break: break-all;
+    font-family: roboto;
+    font-size: 20px;
+    color: var(--theme-light-text);
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+.dark .contFaleConosco .faleConoscoInfo .contText span {
+    color: var(--theme-dark-text);
+}
+
+.dark .contFaleConosco .faleConoscoInfo .contText button:hover {
+    border: 1.8px solid var(--theme-dark-text);
+    color: var(--theme-dark-text);
+}
+
+.contFaleConosco .faleConoscoInfo .contText button {
+    margin-top: 15px;
+    font-family: var(--font-elements);
+    background-color: rgb(78, 78, 143);
+    color: #f2f2f2;
+    font-size: 18px;
+    width: 300px;
+    height: 55px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.contFaleConosco .faleConoscoInfo .contText button:hover {
+    border: 1.8px solid var(--theme-light-text);
+    color: var(--theme-light-text);
+    background-color: transparent;
+}
+
+.contFaleConosco .faleConoscoInfo .contImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.contFaleConosco .faleConoscoInfo .contImg img {
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+}
+
+.dark .contFaleConosco .faleConoscoInfo {
+    background-color: var(--theme-dark-elements);
+}
+
+.sobreNosOffHidden {
+    opacity: 1;
+}
+
+@media screen and (max-width: 970px) {
+    .faleConoscoInfo {
+        flex-direction: column-reverse;
+    }
+
+    .contFaleConosco .faleConoscoInfo .contImg {
+        width: 100%;
+        height: 60%;
+    }
+
+    .contFaleConosco .faleConoscoInfo .contText {
+        width: 100%;
+    }
+
+    .contFaleConosco .faleConoscoInfo .contText button {
+        width: 55%;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .contFaleConosco .faleConoscoInfo .contText button {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .contFaleConosco .faleConoscoInfo .contImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .apsCont img {
+        width: 100%;
+
+    }
+
+    .apsCont .apsText button {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+
+    .apsCont .apsText span {
+        word-break: break-all;
+        max-width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .contFaleConosco .faleConoscoInfo .contText span {
+        max-width: 85%;
+    }
+
+    .contFaleConosco .faleConoscoInfo .contText button {
+        width: 85%;
+    }
+
+    .apsCont .apsText span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .contFaleConosco .faleConoscoInfo {
+        width: 95%;
+    }
+}

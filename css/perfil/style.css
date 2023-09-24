@@ -1,0 +1,140 @@
+.contPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.sgPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(78, 78, 143);
+    margin: 50px 0px;
+}
+
+.sgPerfil span {
+    font-size: 60px;
+    font-family: var(--font-navbar);
+    color: #fff;
+}
+
+.contInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 0px;
+    width: 680px;
+    min-height: 100px;
+    border-radius: 20px;
+    background-color: var(--theme-light-elements);
+}
+
+.dark .contInfo {
+    background-color: var(--theme-dark-elements);
+}
+
+.contInfo label {
+    margin: 5px;
+    font-size: 18px;
+    font-family: var(--font-elements);
+    color: var(--theme-light-text);
+}
+
+.dark .contInfo label {
+    color: var(--theme-dark-text);
+}
+
+.user {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.user .firstName {
+    width: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.user .surname {
+    width: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.email {
+    padding: 0 20px;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.idUser {
+    padding: 0 20px;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.styleInputText {
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--theme-light-navbar);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.dark .styleInputText {
+    background-color: var(--theme-dark-navbar);
+}
+
+.styleInputText input {
+    width: 95%;
+    height: 90%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: var(--font-elements);
+    color: var(--theme-light-text);
+}
+
+.dark .styleInputText input {
+    color: var(--theme-dark-text);
+}
+
+@media screen and (max-width: 685px) {
+
+    .contInfo {
+        justify-content: start;
+        width: 100%;
+        min-height: 66vh;
+        border-radius: 0px;
+    }
+
+}

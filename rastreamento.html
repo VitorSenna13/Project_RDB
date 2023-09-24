@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreamento</title>
+    <link rel="shortcut icon" href="./assets/img/logo/RDB_HEADER.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/global/style.css">
+    <link rel="stylesheet" href="./css/rastreamento/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body>
+
+    <!-- NavBar: Global -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./assets/img/galery/RDB_NOT_BACKGROUND.png" alt="">
+        </div>
+
+        <div class="contLinks">
+
+            <!-- <button class="inputTheme">
+                <div class="elementsTheme">
+                    <div class="modeLight">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+
+                    <div class="modeDark">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+
+                    <div class="seletor"></div>
+                </div>
+            </button>
+
+            <button class="inputThemeMobile">
+                <div class="modeLight">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+
+                <div class="modeDark">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </button> -->
+
+            <ul>
+                <li>
+                    <a href="./home.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./faleConosco.html">
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./feedback.html">
+                        <span>Feedback</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="config">
+
+            <button class="perfil" onclick="navigation('./config.html')">
+                <span>
+                    VS
+                </span>
+            </button>
+
+            <button class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="menuMobile">
+        <div class="contHeader">
+            <button class="buttonExit">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./faleConosco.html">Fale conosco</a></li>
+            <li><a href="./feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo -->
+
+    <div class="contPrincipal">
+        <div class="contMaps">
+            <span>Escolha qual bobina encontrar...</span>
+        </div>
+
+        <cont class="alterRastrear">
+            <button class="buttonRastrear" onclick="renderMaps(-23.548845, -46.600450)">
+                Bobina 1
+            </button>
+
+            <button class="buttonRastrear" onclick="renderMaps(-23.548662, -46.600041)">
+                Bobina 2
+            </button>
+
+            <button class="buttonRastrear" onclick="renderMaps(-23.548929, -46.600341)">
+                Bobina 3
+            </button>
+        </cont>
+    </div>
+
+    <!-- Footer: Global -->
+
+    <footer>
+        <div class="contSocial">
+            <div class="titleSocial">
+                <span>Siga-nos nas redes sociais</span>
+            </div>
+
+            <div class="linkSocial">
+                <div class="contRS instagram">
+                    <a href="https://www.instagram.com/senaigrafica/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="contRS facebook">
+                    <a href="https://www.facebook.com/senaigrafica/?locale=pt_BR">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <div class="contRS twitter">
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsenaigrafica">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="linkPages">
+                <ul>
+                    <li>
+                        <a href="./home.html">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./faleConosco.html">
+                            <span>Fale conosco</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feedback.html">
+                            <span>Feedback</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/themes.js"></script>
+    <script src="./js/responsivo.js"></script>
+    <script src="./js/renderItem.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="https://kit.fontawesome.com/1c9db29424.js" crossorigin="anonymous"></script>
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyDZCcpo7EuZWQh8QxcddFPpqeC8kcGHvZ4", v: "beta" });</script>
+</body>
+
+</html>

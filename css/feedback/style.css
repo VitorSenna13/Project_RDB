@@ -1,0 +1,169 @@
+.container {
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 80vh;
+    background-color: var(--theme-light-navbar);
+    overflow-y: hidden;
+}
+
+.dark .container {
+    background-color: var(--theme-dark-navbar);
+}
+
+.container span {
+    font-family: var(--font-navbar);
+    font-size: 30px;
+    color: var(--theme-light-text);
+    margin: 10px 0px;
+}
+
+.dark .container span {
+    color: var(--theme-dark-text);
+}
+
+.container .contCard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.container .contCard .cardFeed {
+    width: 80%;
+    min-height: 250px;
+    border-radius: 15px;
+    background-color: black;
+    margin: 10px 0px;
+}
+
+.container .contCard .cardFeed .headerCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .contCard .cardFeed .headerCard .sigPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(78, 78, 143);
+    margin: 10px 10px;
+}
+
+.container .contCard .cardFeed .headerCard .sigPerfil span {
+    font-size: 15px;
+}
+
+.container .contCard .cardFeed .headerCard .assuntoCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container .contCard .cardFeed .headerCard .assuntoCard span {
+    font-size: 20px;
+    padding: 0 5px;
+    word-break: break-all;
+    text-align: center;
+}
+
+.container .contCard .cardFeed .headerCard .deletarFeed {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    border: none;
+    background-color: rgba(177, 84, 67, 0.911);
+    cursor: pointer;
+}
+
+.container .contCard .cardFeed .headerCard .deletarFeed i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.container .contCard .cardFeed .contDescCard {
+    padding: 8px;
+    width: 100%;
+    min-height: 190px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .contCard .cardFeed .contDescCard span {
+    font-size: 15px;
+    font-family: var(--font-elements);
+    word-break: break-all;
+    text-align: center;
+    color: var(--theme-light-text);
+}
+
+.dark .container .contCard .cardFeed .contDescCard span {
+    color: var(--theme-dark-text);
+}
+
+
+@media screen and (max-width: 715px) {
+    .container {
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    .container .contCard .cardFeed .headerCard .assuntoCard span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container .contCard .cardFeed .headerCard .assuntoCard span {
+        font-size: 15px;
+    }
+
+    .container .contCard .cardFeed .contDescCard span {
+        font-size: 12px;
+    }
+
+    .container .contCard .cardFeed {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .container .contCard .cardFeed .headerCard .sigPerfil {
+        width: 45px;
+        height: 35px;
+    }
+
+    .container .contCard .cardFeed .headerCard .sigPerfil span {
+        font-size: 13px;
+    }
+
+    .container .contCard .cardFeed .headerCard .deletarFeed {
+        width: 45px;
+        height: 35px;
+    }
+
+    .container .contCard .cardFeed .headerCard .deletarFeed i {
+        font-size: 13px;
+    }
+
+
+}

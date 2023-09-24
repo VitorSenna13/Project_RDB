@@ -1,0 +1,205 @@
+.contFaleConosco {
+    width: 100%;
+    min-height: 73vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.formReport {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 680px;
+    max-width: 680px;
+    min-height: 65vh;
+    background-color: var(--theme-light-navbar);
+    border-radius: 10px;
+}
+
+.dark .formReport {
+    background-color: var(--theme-dark-navbar);
+}
+
+.titleReport {
+    padding: 5px 0;
+    text-align: center;
+    width: 50%;
+    font-family: var(--font-navbar);
+    font-size: 30px;
+    color: var(--theme-light-text);
+    margin: 30px 0px;
+    box-shadow: 0 0.5px #fff;
+}
+
+.dark .titleReport {
+    color: var(--theme-dark-text);
+}
+
+.user {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.contFaleConosco label {
+    margin: 5px;
+    font-size: 18px;
+    font-family: var(--font-elements);
+    color: var(--theme-light-text);
+}
+
+.dark .contFaleConosco label {
+    color: var(--theme-dark-text);
+}
+
+.user .firstName {
+    width: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.user .surname {
+    width: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.email {
+    padding: 0 20px;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.assunto {
+    padding: 0 20px;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.report {
+    padding: 0 20px;
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.report textarea {
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-height: 50px;
+    height: 100px;
+    border: none;
+    max-height: 170px;
+    font-size: 16px;
+    font-family: var(--font-elements);
+    color: var(--theme-light-text);
+}
+
+.dark .report textarea {
+    color: var(--theme-dark-text);
+}
+
+.buttonSubmit {
+    padding: 0 20px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.buttonSubmit button {
+    width: 80%;
+    height: 55px;
+    background-color: rgb(78, 78, 143);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--theme-dark-text);
+    font-size: 20px;
+    font-family: var(--font-elements);
+}
+
+.styleInputText {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(180, 153, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.dark .styleInputText {
+    background-color: var(--theme-dark-elements);
+}
+
+.styleInputText input {
+    width: 95%;
+    height: 90%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: var(--font-elements);
+    color: var(--theme-light-text);
+}
+
+.dark .styleInputText input {
+    color: var(--theme-dark-text);
+}
+
+@media screen and (max-width: 680px) {
+    .user .firstName {
+        align-items: center;
+    }
+
+    .user .surname {
+        align-items: center;
+    }
+
+    .formReport {
+        width: 98%;
+    }
+
+    .report textarea {
+        max-height: 120px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .email {
+        padding: 0px 0px;
+    }
+
+    .assunto {
+        padding: 0px 0px;
+    }
+}

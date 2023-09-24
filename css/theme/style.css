@@ -1,0 +1,96 @@
+.contTheme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.contTheme form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    background-color: var(--theme-light-navbar);
+    border-radius: 10px;
+}
+
+.dark .contTheme form {
+    background-color: var(--theme-dark-navbar);
+}
+
+.contTheme form .styleInputRadio {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 10px;
+    background-color: var rgb(180, 153, 153);
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.dark .contTheme form .styleInputRadio {
+    background-color: var(--theme-dark-elements);
+}
+
+.contTheme form .styleInputRadio input[type='radio'] {
+    display: none;
+}
+
+.contTheme form .styleInputRadio label {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.dark .contTheme form .styleInputRadio label {
+    border: 1px solid #fff;
+}
+
+.contTheme form .styleInputRadio input[type='radio']:checked~label {
+    background-color: rgb(78, 78, 143);
+}
+
+.contTheme form .styleInputRadio span {
+    font-size: 20px;
+    font-family: var(--font-elements);
+    color: var(--theme-light-text);
+}
+
+.dark .contTheme form .styleInputRadio span {
+    color: var(--theme-dark-text);
+}
+
+.contTheme form .buttonSubmit {
+    margin-top: 10px;
+    width: 60%;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(78, 78, 143);
+    color: #fff;
+    font-size: 17px;
+    font-family: var(--font-elements);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 605px) {
+    .contTheme form {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contTheme form .buttonSubmit {
+        margin-top: 50px;
+    }
+}

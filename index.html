@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./assets/img/logo/RDB_HEADER.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/login/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <img src="./assets/img/logo/RDB_HEADER.png" alt="">
+            <div class="user">
+                <label for="">Usuário</label>
+                <div class="styleInput">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="senha">
+                <label for="">Senha</label>
+                <div class="styleInput">
+                    <input type="password">
+                </div>
+            </div>
+
+            <button type="button">Entrar</button>
+            <span>usuario: 123</span>
+            <span>senha: 123</span>
+        </form>
+
+    </div>
+</body>
+
+<script>
+    const userInput = document.querySelector('.container form .user .styleInput input');
+    const senhaInput = document.querySelector('.container form .senha .styleInput input');
+
+    document.querySelector('.container form button').addEventListener('click', () => {
+
+        if (userInput.value == '123' && senhaInput.value == '123') {
+            window.location.href = './home.html';
+        }
+    })
+</script>
+
+</html>

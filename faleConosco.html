@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="shortcut icon" href="./assets/img/logo/RDB_HEADER.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/faleConosco/style.css">
+    <link rel="stylesheet" href="./css/global/style.css">
+</head>
+
+<body>
+
+    <!-- NavBar: Global -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./assets/img/galery/RDB_NOT_BACKGROUND.png" alt="">
+        </div>
+
+        <div class="contLinks">
+
+            <!-- <button class="inputTheme">
+                <div class="elementsTheme">
+                    <div class="modeLight">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+
+                    <div class="modeDark">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+
+                    <div class="seletor"></div>
+                </div>
+            </button>
+
+            <button class="inputThemeMobile">
+                <div class="modeLight">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+
+                <div class="modeDark">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </button> -->
+
+            <ul>
+                <li>
+                    <a href="./home.html">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./faleConosco.html">
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./feedback.html">
+                        <span>Feedback</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="config">
+
+            <button class="perfil" onclick="navigation('./config.html')">
+                <span>
+                    VS
+                </span>
+            </button>
+
+            <button class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="menuMobile">
+        <div class="contHeader">
+            <button class="buttonExit">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./faleConosco.html">Fale conosco</a></li>
+            <li><a href="./feedback.html">Feedback</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo -->
+
+    <div class="contFaleConosco">
+
+        <form class="formReport">
+
+            <span class="titleReport">
+                Report
+            </span>
+
+            <div class="user">
+                <div class="firstName">
+                    <label>Nome</label>
+                    <div class="styleInputText">
+                        <input type="text" name="" readonly>
+                    </div>
+                </div>
+
+                <div class="surname">
+                    <label>Sobrenome</label>
+                    <div class="styleInputText">
+                        <input type="text" name="" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="email">
+                <label>Email</label>
+                <div class="styleInputText">
+                    <input type="text" name="" readonly>
+                </div>
+            </div>
+
+            <div class="assunto">
+                <label>Qual o problema?</label>
+                <div class="styleInputText">
+                    <input type="text" name="">
+                </div>
+            </div>
+
+            <div class="report">
+                <label>Nos conte mais sobre o problema</label>
+                <div class="styleInputText">
+                    <textarea name=""></textarea>
+                </div>
+            </div>
+
+            <div class="buttonSubmit">
+                <button type="submit">
+                    Enviar
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Footer: Global -->
+
+    <footer>
+        <div class="contSocial">
+            <div class="titleSocial">
+                <span>Siga-nos nas redes sociais</span>
+            </div>
+
+            <div class="linkSocial">
+                <div class="contRS instagram">
+                    <a href="https://www.instagram.com/senaigrafica/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="contRS facebook">
+                    <a href="https://www.facebook.com/senaigrafica/?locale=pt_BR">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <div class="contRS twitter">
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsenaigrafica">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="linkPages">
+                <ul>
+                    <li>
+                        <a href="./home.html">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./faleConosco.html">
+                            <span>Fale conosco</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feedback.html">
+                            <span>Feedback</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/renderItem.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/themes.js"></script>
+    <script src="./js/responsivo.js"></script>
+    <script src="https://kit.fontawesome.com/1c9db29424.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

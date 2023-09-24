@@ -1,0 +1,79 @@
+.contPrincipal {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 73vh;
+}
+
+.contPrincipal .contMaps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 600px;
+    background-color: var(--theme-light-elements);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dark .contPrincipal .contMaps {
+    background-color: var(--theme-dark-elements);
+}
+
+.contPrincipal .contMaps span {
+    text-align: center;
+    font-family: roboto;
+    font-size: 30px;
+    cursor: default;
+    color: var(----theme-light-text);
+}
+
+.dark .contPrincipal .contMaps span {
+    color: var(--theme-dark-text);
+}
+
+.textMapsDesactive {
+    display: none !important;
+}
+
+.contPrincipal .contMaps iframe {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.ActiveMaps {
+    display: block !important;
+}
+
+.contPrincipal .alterRastrear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contPrincipal .alterRastrear .buttonRastrear {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: rgb(102, 37, 163);
+    margin: 5px 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contPrincipal .alterRastrear .buttonRastrear:hover {
+    background-color: rgb(26, 26, 153);
+}
+
+@media screen and (max-width: 1205px) {
+    .contPrincipal .contMaps {
+        width: 95%;
+    }
+}
